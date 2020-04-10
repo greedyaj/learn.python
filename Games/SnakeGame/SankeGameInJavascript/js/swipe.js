@@ -48,5 +48,4 @@ function handleTouchMove(evt) {
   xDown = null;
   yDown = null;
   previousSwipe = swipe;
-  swipe = null;
 }
