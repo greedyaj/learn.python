@@ -91,8 +91,6 @@ function draw() {
   var snakeX = snake[0].x;
   var snakeY = snake[0].y;
 
-  alert("swipe: " + swipe);
-
   //new head position
   if(d == "UP" || swipe == "UP") snakeY -= box;
   if(d == "DOWN" || swipe == "DOWN") snakeY += box;
