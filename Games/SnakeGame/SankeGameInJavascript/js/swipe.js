@@ -27,6 +27,8 @@ function handleTouchMove(evt) {
   var xDiff = xDown - xUP;
   var yDiff = yDown - yUP;
 
+  alert("xDiff: " + xDiff + " yDiff:" + yDiff);
+
   if(Math.abs(xDiff) > Math.abs(yDiff)) {
     if(xDiff > 0 && previousSwipe != "RIGHT") {
       swipe = "LEFT"
@@ -43,6 +45,7 @@ function handleTouchMove(evt) {
       swipe = "DOWN";
     }
   }
+  alert("previousSwipe: " + previousSwipe + " swipe:" + swipe);
 
   //reset
   xDown = null;
