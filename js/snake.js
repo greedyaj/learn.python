@@ -1,6 +1,12 @@
+//unit
+const box = 32;
+
+var screenWidth = (parseInt(window.innerWidth * 0.95 / box)) * box;
+var screenHeight = (parseInt(window.innerHeight * 0.95 / box)) * box;
+
 const cvs = document.getElementById("game");
-cvs.width = window.innerWidth;
-cvs.height = window.innerHeight;
+cvs.width = screenWidth;
+cvs.height = screenHeight;
 
 const ctx = cvs.getContext("2d");
 // Create gradient
@@ -10,8 +16,6 @@ grd.addColorStop(0, "green");
 // Fill with gradient
 ctx.fillStyle = grd;
 ctx.fillRect(0, 0, cvs.width, cvs.height);
-//unit
-const box = 32;
 
 //eat sound
 const eat = new Audio();
