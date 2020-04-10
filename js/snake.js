@@ -1,4 +1,7 @@
 const cvs = document.getElementById("game");
+cvs.width = window.innerWidth;
+cvs.height = window.innerHeight;
+
 const ctx = cvs.getContext("2d");
 // Create gradient
 var grd = ctx.createLinearGradient(0, 0, cvs.width, cvs.height);
@@ -113,6 +116,9 @@ function draw() {
   if(snakeX < 0 || snakeX >= cvs.width || snakeY < 0 || snakeY >= cvs.height || collision(newHead, snake)) {
     clearInterval(gamePlay);
     dead.play();
+
+    alert("Game Over");
+    restart();
   }
 
   snake.unshift(newHead);
