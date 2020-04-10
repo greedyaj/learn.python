@@ -2,7 +2,7 @@
 const box = 32;
 
 var screenWidth = (parseInt(window.innerWidth * 0.90 / box)) * box;
-var screenHeight = (parseInt(window.innerHeight * 0.90 / box)) * box;
+var screenHeight = (parseInt(window.innerHeight * 0.82 / box)) * box;
 
 const cvs = document.getElementById("game");
 cvs.width = screenWidth;
