@@ -1,0 +1,7 @@
+In Python you can print data on console
+In Python you can do numerical calculations
+In Python you can print data on console
+In Python you can make use of data structures
+In Python you can do object oriented programming
+In Python you can read and write files
+In Python you can handle exceptions
